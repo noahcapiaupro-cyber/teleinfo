@@ -11,6 +11,7 @@ try:
         print("Connecté au serveur teleinfo")
         time.sleep(4)
         trames = s.recv(1024).decode('ascii', errors='ignore')
+        print(trames)
         lignes = trames.split("\n")
         #print(lignes)
         for ligne in lignes:
